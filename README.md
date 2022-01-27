@@ -12,7 +12,7 @@ No primeiro exemplo de request eu utilizo o [`EventSource`](https://developer.mo
 
 No segundo exemplo eu utilizo o [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) para buscar os dados no backend de forma convencional.
 
-### Analisando os resultado 
+### Analisando os resultados 
 
 O retorno dos dados utilizando o `EventSouce` ocorre por volta de `550ms` porque a cada item retornado no `stream` do backend um evento é disparado no `frontend` por outro lado utilizando o `fetch` os dados somente serão retornados quando **TODOS** os itens estiverem prontos no backend tendo uma performance de mais de `22500ms` para ter um feedback ao usuário;
 
