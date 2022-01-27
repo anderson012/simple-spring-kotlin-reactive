@@ -14,6 +14,6 @@ No segundo exemplo eu utilizo o [`fetch`](https://developer.mozilla.org/en-US/do
 
 ### Analisando os resultados 
 
-O retorno dos dados utilizando o `EventSouce` ocorre por volta de `550ms` porque a cada item retornado no `stream` do backend um evento é disparado no `frontend` por outro lado utilizando o `fetch` os dados somente serão retornados quando **TODOS** os itens estiverem prontos no backend tendo uma performance de mais de `22500ms` para ter um feedback ao usuário;
+O retorno dos dados utilizando o `EventSouce` ocorre por volta de `550ms` porque a cada item retornado no `stream` do backend um evento é disparado no `frontend` por outro lado utilizando o `fetch` os dados somente serão retornados quando **TODOS** os itens estiverem prontos no backend tendo uma demora de mais de `22500ms` para ter um feedback ao usuário;
 
 ![image](https://user-images.githubusercontent.com/7342177/151296786-44ce2e5c-698a-4588-a69b-6b4b1e4d4da8.png)
