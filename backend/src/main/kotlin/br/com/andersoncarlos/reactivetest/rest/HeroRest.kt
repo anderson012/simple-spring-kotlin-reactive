@@ -37,14 +37,14 @@ class HeroRest {
         return repository
              .saveAll(list)
             .delayElements(
-                Duration.ofMillis(300)
+                Duration.ofMillis(100)
             ).map { "${it.nickname} inserted" }
 
     }
 
     @GetMapping(path = ["/heroes"])
     fun getAll(): Flux<Hero?> {
-        val flux: Flux<Hero?> = repository.findAll().delayElements(Duration.ofMillis(300));
+        val flux: Flux<Hero?> = repository.findAll().delayElements(Duration.ofMillis(500));
         flux.subscribe {
             println("Hero ${it?.nickname} found");
         }
