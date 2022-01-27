@@ -4,7 +4,7 @@
 Projeto foi criado apenas para estudo do paradigma da progração reativa com banco de dados relacional
 
 ## Funcionamento do projeto 
-Nesse simples projeto utilizo o Kotlin como backend e o padrão WebFux do SprintBoot para retornar o dados em um endpoint convencional do SprintWeb utilizando o conceito de progração reativa. para guardar os registros utilizo o H2 como banco de dados e o driver `R2DBC`
+Nesse simples projeto utilizo o Kotlin como backend e o padrão WebFux do SprintBoot para retornar os dados em um endpoint convencional do SprintWeb utilizando o conceito de progração reativa. para guardar os registros utilizo o H2 como banco de dados e o driver `R2DBC`
 
 No frontend eu criei dois tipos de chamadas ao endpoint `/heroes` onde irá retornar uma lista de herois de forma assíncrona.  
 
